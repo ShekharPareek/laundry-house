@@ -13,10 +13,10 @@
 
 <body class="bg-gray-50 text-gray-800">
   <!-- Header -->
-  <header class="bg-white shadow-md py-6 sticky top-0 z-50">
+  <header class="bg-[#211e17] shadow-md py-2 sticky top-0 z-50">
     <div class="container mx-auto px-4">
       <h1 class="text-3xl font-bold text-indigo-600">
-        Hospital Feedback Portal
+     <img class="text-center" src="./WhatsApp Image 2025-08-13 at 12.41.28_2e23014f.jpg">
       </h1>
     </div>
   </header>
@@ -27,7 +27,7 @@
         background-size: cover;
         background-position: center;
       ">
-    <div class="bg-white/80 py-10 px-6 max-w-3xl mx-auto rounded shadow text-center animate-fade-in-down">
+    <div class="bg-white/50 py-10 px-6 max-w-3xl mx-auto rounded shadow text-center animate-fade-in-down">
       <h2 class="text-3xl font-bold text-gray-900 mb-4">
         We Value Your Feedback!
       </h2>
@@ -35,7 +35,7 @@
         Tell us about your experience so we can improve and serve you better.
       </p>
       <a href="#form"
-        class="inline-block px-6 py-3 bg-primary text-black font-semibold rounded shadow hover:bg-yellow-400 transition">Leave
+        class="inline-block px-6 py-3 bg-yellow-400 text-black font-semibold rounded shadow hover:bg-yellow-400 transition">Leave
         Feedback</a>
     </div>
   </section>
@@ -175,21 +175,25 @@
 
   <!-- Insert this inside your existing <script> block near the bottom -->
   <script>
-    const firebaseConfig = {
-      apiKey: 'AIzaSyCF7UrWZXkcnquHhfeTvnDee7Sm1qByEVc',
-      authDomain: "feedify-review-app.firebaseapp.com",
-      projectId: "feedify-review-app",
-    };
+const firebaseConfig = {
+  apiKey: "AIzaSyCF7UrWZXkcnquHhfeTvnDee7Sm1qByEVc",
+  authDomain: "feedify-review-app.firebaseapp.com",
+  projectId: "feedify-review-app",
+  storageBucket: "feedify-review-app.firebasestorage.app",
+  messagingSenderId: "566180058802",
+  appId: "1:566180058802:web:e842136a578e16b8dddbab",
+  measurementId: "G-EMETYTH8GN"
+};
 
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
-    const hospitalId = 'xyz_hospital';
+    const hospitalId = 'ZBVenyk8IQmMkte6zFex';
     let selectedRating = 0;
 
     const stars = document.querySelectorAll('.star');
     const formSection = document.getElementById('formSection');
 
-    const googleReviewURL = 'https://www.google.com/maps/place/XYZ+Hospital'; // Replace with your hospital's actual review link
+    const googleReviewURL = 'https://share.google/IZj7uJoL0E46YyxFb'; // Replace with your hospital's actual review link
 
     stars.forEach((star) => {
       star.addEventListener('click', () => {
@@ -303,7 +307,7 @@
         src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCTlR5blFFPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--20222b088e9e19680b434e9d00cb37f019e7b411/28bbd6eb39185cd9a3ac74f45f2f3ed3.jpg"
         alt="Advertisement" class="mx-auto mb-4 rounded" />
       <p class="text-gray-700 mb-2">
-        Please wait <span id="timer">25</span> seconds...
+        Please wait <span id="timer">10</span> seconds...
       </p>
     </div>
   </div>
